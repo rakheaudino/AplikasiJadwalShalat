@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+     android:background="@drawable/arabia">
+
+
+    <LinearLayout
+        android:layout_below="@+id/image"
+        android:id="@+id/linear10"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/search_field"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:hint="Ketik Nama kota/Negara"
+            android:textColor="@android:color/black"
+            android:inputType="textCapWords"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:id="@+id/search"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:onClick="search"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/image"
+        android:layout_width="382dp"
+        android:layout_height="121dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/index2"/>
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/images3"
+        android:id="@+id/linear1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_marginRight="80dp"
+            android:background="@drawable/custom_button"
+            android:id="@+id/kopi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="EMAIL"
+            android:onClick="contactUs"/>
+
+        <Button
+            android:background="@drawable/custom_button"
+            android:id="@+id/profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="PEMBUAT"
+            android:onClick="author"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/images3"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="282dp"
+            android:layout_height="100dp"
+            android:src="@drawable/images1"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:textAllCaps="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/linear10"
+        android:id="@+id/text10"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="JANGAN TINGGALKAN SHALAT!"
+        android:textSize="24sp" />
+
+</RelativeLayout>
